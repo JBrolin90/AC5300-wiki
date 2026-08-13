@@ -1,0 +1,209 @@
+[
+  {
+    "label": "3.0.0.4.386_51582",
+    "title": "",
+    "internal": "3_0_0_4_386_51582",
+    "size": "69.65 MB",
+    "date": "2025/03/12",
+    "is_beta": false,
+    "notes": "This model was end of its life, and its firmware, utility, website, and manual will no longer be updated. For more details, please refer to https://www.asus.com/event/network/eol-product/\n\n1.Fixed the UI issue in Chrome.\n2.Enhanced input parameter handling techniques to improve data processing stability and system security.\n3.Enhance system access control mechanisms."
+  },
+  {
+    "label": "3.0.0.4.386_51569",
+    "title": "",
+    "internal": "3_0_0_4_386_51569",
+    "size": "69.74 MB",
+    "date": "2024/11/12",
+    "is_beta": false,
+    "notes": "Please unzip the firmware file, and then verify the checksum.\nSHA256: 06f4be976520a833c05bcaa569602f615ca05d50cceed71059ed7893c3bb8c0b\n\n1. Strengthened input validation and data processing workflows to further protect information security.\n2. Enhanced AiCloud password protection mechanisms, safeguarding against unauthorized access attempts.\n3. Enhanced device security through improved buffer handling in connection features.\n4. Refined data handling processes, ensuring secure and accurate information management.\n5. Enhanced file access control mechanisms, promoting a more secure operating environment.\n6. Strengthened certificate protection, providing enhanced data security."
+  },
+  {
+    "label": "3.0.0.4.386_51529",
+    "title": "",
+    "internal": "3_0_0_4_386_51529",
+    "size": "69.2 MB",
+    "date": "2023/11/27",
+    "is_beta": false,
+    "notes": "Security updates:\n-Fixed DoS vulnerabilities in firewall configuration pages. \n-Fixed DoS vulerabilities in httpd. \n-Fixed information disclosure vulnerability. \n-Fixed CVE-2023-28702 and CVE-2023-28703. \n-Fixed null pointer dereference vulnerabilities. \n\nPlease unzip the firmware file, and then verify the checksum.\nSHA256: bbb0e96c4d62e26992b41eafb6c490e0a72225a41f3997ffb72c3e5dc23c22ae"
+  },
+  {
+    "label": "3.0.0.4.386.48377",
+    "title": "",
+    "internal": "3_0_0_4_386_48377",
+    "size": "66.16 MB",
+    "date": "2022/03/30",
+    "is_beta": false,
+    "notes": "1. Fixed OpenSSL CVE-2022-0778\n2. Added more security measures to block malware.\n3. Fixed Stored XSS vulnerability. Thanks to Milan Kyselica of IstroSec.\n4. Fixed CVE-2022-23970, CVE-2022-23971, CVE-2022-23972, CVE-2022-23973, CVE-2022-CVE-2022-25595, CVE-2022-25596\n5. Added 3rd party DNS server list in WAN --> DNS to help users enhance the connection security.\n\nWe suggest manually resetting the router after upgrading from 3.0.0.4.384 or earlier version to this version. \nhttps://www.asus.com/support/FAQ/1039078\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: d5693fe7c0ed6c0546f0f12f1b43f1c1"
+  },
+  {
+    "label": "3.0.0.4.386.46092",
+    "title": "",
+    "internal": "3_0_0_4_386_46092",
+    "size": "66.09 MB",
+    "date": "2022/03/17",
+    "is_beta": false,
+    "notes": "Security\n- Fixed string format stacks vulnerability\n- Fixed cross-site-scripting vulnerability\n- Fixed informational vulnerability.\nThanks to Howard McGreehan.\n\n-Fixed SQL injection vulnerability\n-Fixed json file traversal vulnerability\n-Fixed plc/port file traversal vulnerability\n-Fixed stack overflow vulnerability\nThanks to HP of Cyber Kunlun Lab\n\n-Fixed authenticated stored XSS vulnerability\nThanks to Luke Walker \u2013 SmartDCC\n\n-Fixed LPD denial of service vulnerability\n-Fixed cfgserver heap overflow vulnerability\n-Fixed cfgserver denial of service vulnerability\nThanks to TianHe from BeFun Cyber Security Lab.\n\n-Fixed CVE-2021-34174, CVE-2022-23972, CVE-2022-23970, CVE-2022-23971, CVE-2022-23973\n\nAdded more ISP profile\nDigi 1 - TM\nDigi 2 - TIME\nDigi 3 - Digi\nDigi 4 - CTS\nDigi 5 - ALLO\nDigi 6 - SACOFA\nMaxis - CTS\nMaxis - SACOFA\nMaxis - TNB/ALLO\n\nFixed AiMesh guest network issues.\nFixed DDNS issues where the WAN IP is IPv6\nFixed UI bugs in Administration --> feedback.\nFixed time zone error.\nImproved the connection stability.\nFixed IPSecVPN issues.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5:5ab1affddaa0d90f757154cc8d3dae54"
+  },
+  {
+    "label": "3.0.0.4.386.42643",
+    "title": "",
+    "internal": "3_0_0_4_386_42643",
+    "size": "65.22 MB",
+    "date": "2021/05/07",
+    "is_beta": false,
+    "notes": "-Fixed CVE-2021-3450, CVE2021-3449 OpenSSL related vulnerability.\n- Fixed the fragattacks vulnerability.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: e2ff2cb9647884f9822dc8d6a63ffa90"
+  },
+  {
+    "label": "9.0.0.4.386.41994",
+    "title": "",
+    "internal": "9_0_0_4_386_41994",
+    "size": "65.05 MB",
+    "date": "2021/02/03",
+    "is_beta": true,
+    "notes": "Security Fixed: \nFixed CVE-2020-25681, CVE-2020-25682, CVE-2020-25683, CVE-2020-25687, CVE-2020-25684, CVE-2020-25685, CVE-2020-25686\n\nPlease be noted this is a quick fix beta version for DNSmasq vulnerabilities. Refer to \"Method 2: Update Manually\" in https://www.asus.com/support/FAQ/1008000 to update this firmware.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: e97a0b79671d2d2d1d66be2ace7e3efc"
+  },
+  {
+    "label": "3.0.0.4.386.41793",
+    "title": "",
+    "internal": "3_0_0_4_386_41793",
+    "size": "65.08 MB",
+    "date": "2021/01/26",
+    "is_beta": false,
+    "notes": "1. AiMesh 2.0\n - System optimization: one click in AiMesh to optimize the topology\n - System Ethernet backhaul mode, all nodes will only connect by ethernet, and all bands can release for wireless clients.\n - System factory default and reboot.\n - Client device reconnect, make the device offline and online again.\n - Client device binding to specific AP.\n - Guest WiFi on all Mesh nodes (all node need to upgrade to 3.0.0.4.386 firmware)\n - Access nodes USB application.\n\n Connection priority and Ethernet backhaul mode introduction\n https://www.asus.com/support/FAQ/1044184\n\n How to setup ASUS AiMesh or ZenWiFi Mesh Ethernet backhaul under different conditions\n https://www.asus.com/support/FAQ/1044151/\n\n 2. New Family interface in ASUS router App.\n ASUS Router App for iOS must greater than iOS v1.0.0.5.75\n Android version greater than v1.0.0.5.74\n\n 3. The unit of the WiFi time scheduler goes to 1 minute.\n\n 4. Support IPSec IKE v1 and IKE v2, and you can use the Windows 10 native VPN client program to connect to the router's IPSec VPN server. The Windows 10 new FAQ is in https://www.asus.com/support/FAQ/1033576\n\n 5. 2.4 and 5G settings on the network map could modify in the same tab.\n\n 6. Captcha for login can be disabled in the administration -> system.\n\n 7. Printer server port can be disabled on the USB app page.\n\n 8. Clients who connect to the guest network can be viewed in the network map -->view list --> interface\n\n 9. Fixed Let's Encrypt issue.\n\n 10. Added IPTV supports for a specific region.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: ee65d41542ebce9947a261ef4405d812"
+  },
+  {
+    "label": "3.0.0.4.384.82037",
+    "title": "",
+    "internal": "3_0_0_4_384_82037",
+    "size": "59.49 MB",
+    "date": "2020/08/03",
+    "is_beta": false,
+    "notes": "Fixed item:\n- Fixed 5GHz connection speed issues. \n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 27e994544e94baf96e51174e924392c7"
+  },
+  {
+    "label": "3.0.0.4.384.81974",
+    "title": "",
+    "internal": "3_0_0_4_384_81974",
+    "size": "59.43 MB",
+    "date": "2020/07/13",
+    "is_beta": false,
+    "notes": "Security update \n - Fixed CVE-2020-12695 (CallStranger) \n - Fixed Reflected XSS vulnerability.\n - Fixed Directory traversal vulnerability.\n - Fixed CVE-2017-15653.\n\nThe update server transport layer security was upgraded and the old protocol was removed. \nIf your router firmware version is lower than 3.0.0.4.384_81686, please refer to the \"Update Manually\" section in https://www.asus.com/support/FAQ/1008000 to update the firmware.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 4c878dd389f624f930c8b909089a9478"
+  },
+  {
+    "label": "3.0.0.4.384.81695",
+    "title": "",
+    "internal": "3_0_0_4_384_81695",
+    "size": "59.29 MB",
+    "date": "2020/03/26",
+    "is_beta": false,
+    "notes": "1. Update Adaptive QoS categories: Help you to prioritize the mission-critical applications\n Those people who work-from-home & learn-from-home will greatly benefit from this new feature with optimized streaming experiences.\n New Supported Categories & Apps:\n - Video conferencing, including Microsoft Teams\u00ae, ZOOM\u00ae, Skype\u00ae, Google Hangouts\u00ae, BlueJeans\u00ae\n- Online learning, including Khan academy\u00ae, Udemy\u00ae, Coursera\u00ae, TED\u00ae, VIPKiD\u00ae, 51Talk\u00ae, XDF\u00ae, Xueersi\u00ae\n- Streaming, including YouTube\u00ae, Netflix\u00ae, HBO NOW\u00ae, Amazon Prime Video\u00ae, Disney+\u00ae, ESPN\u00ae, MLB.com\u00ae, iQIY\u00ae\n- Indoor training, including Zwift\u00ae, Peloton\u00ae, Onelap\u00ae \nStay tuned and more apps are coming to the list soon!\n\n 2. Support Mobile Game Mode\n - One-click prioritizing your mobile device to the highest and ensure you the best mobile gaming experiences.\n - Install/Update ASUS Router App (Android supports later than 1.0.0.5.44; iOS supports later than 1.0.0.5.41)\n\nPlease unzip the firmware file first and then check the MD5 code.\nMD5: de0b887a2b75115f47729ada966106b1"
+  },
+  {
+    "label": "3.0.0.4.384.81686",
+    "title": "",
+    "internal": "3_0_0_4_384_81686",
+    "size": "59.49 MB",
+    "date": "2020/03/10",
+    "is_beta": false,
+    "notes": "- Fixed CVE-2019-15126 (Kr00k) vulnerability. \n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 4b3943cceb619fd5e923b66e62474448"
+  },
+  {
+    "label": "3.0.0.4.384.81685",
+    "title": "",
+    "internal": "3_0_0_4_384_81685",
+    "size": "59.05 MB",
+    "date": "2020/03/06",
+    "is_beta": false,
+    "notes": "- Fixed the firmware update problem in some special conditions.\n- Fixed UI bugs.\n- Fixed Let's Encrypt related bugs.\n- Fixed folder creating bugs in Samba.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: e881f3caa2ac6066f5ee76454df653ee"
+  },
+  {
+    "label": "9.0.0.4.384.81551",
+    "title": "",
+    "internal": "9_0_0_4_384_81551",
+    "size": "59.34 MB",
+    "date": "2020/02/03",
+    "is_beta": true,
+    "notes": "Please be noted this is a beta version, if you want to roll back to the official version, you will need to process manual firmware update in web GUI. \n\n- Fixed a DDoS vulnerability.\n- Fixed Let's Encrypt related bugs.\n- Fixed VPN Fusion issues.\n- Fixed folder creating bugs in Samba.\n- Fixed dual wan failover bugs while the primary wan type is L2TP.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 5ca64a4ad70e344bda542161cc2d86a4"
+  },
+  {
+    "label": "3.0.0.4.384.81099",
+    "title": "",
+    "internal": "3_0_0_4_384_81099",
+    "size": "63.12 MB",
+    "date": "2019/09/23",
+    "is_beta": false,
+    "notes": "Security fix\n - Fixed a DDoS vulnerability. Thanks for Altin Thartori's contribution. \n\n Bug fix\n - Fixed web control interface login problem.\n - Fixed Network map clist list issues.\n - Fixed VPN fusion related bugs.\n - Fixed block internet access problem when clients connected to AiMesh node\n - Fixed Samba server compatibility issue.\n - Fixed OpenVPN related bugs.\n - Fixed schedule reboot bugs.\n - Improved AiMesh compatibility.\n - Improved system stability.\n - Fixed User interface related bugs.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: fe3c48f2b9a3767a89b36e58bf942a7f"
+  },
+  {
+    "label": "3.0.0.4.384.70116",
+    "title": "",
+    "internal": "3_0_0_4_384_70116",
+    "size": "61.29 MB",
+    "date": "2019/05/30",
+    "is_beta": false,
+    "notes": ""
+  },
+  {
+    "label": "3.0.0.4.384.45717",
+    "title": "",
+    "internal": "3_0_0_4_384_45717",
+    "size": "62.31 MB",
+    "date": "2019/05/22",
+    "is_beta": false,
+    "notes": "- Fixed DDoS vulnerability.\n- Fixed AiCloud vulnerability. Thanks for Matt Cundari's contribution.\n- Fixed command injection vulnerability. Thanks for S1mba Lu's contribution.\n- Fixed buffer overflow vulnerability. Thanks for Javier Aguinaga's contribution.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 641b0a8a03ad080f25981ecc96a72abe"
+  },
+  {
+    "label": "3.0.0.4.384.45713",
+    "title": "",
+    "internal": "3_0_0_4_384_45713",
+    "size": "62.31 MB",
+    "date": "2019/04/18",
+    "is_beta": false,
+    "notes": "Security Fix\n - Fixed CVE-2018-20334\n - Fixed CVE-2018-20336\n - Fixed null pointer issue. Thanks for CodeBreaker of STARLabs\u2019 contribution.\n - Fixed AiCloud buffer overflow vulnerability. Thanks for Resecurity International's contribution.\n\nBug Fix\n - Fixed AiMesh LAN IP issue when router using IPv6 WAN.\n - Fixed AiMesh connection issues.\n - Fixed Network Map related issues.\n - Fixed Download Master icon disappear issue.\n - Fixed LAN LED not blinking problem.\n - Fixed browser no response problem when enabled Traffic analyzer. \n - Fixed wireless mac filter input issue.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 9558196da53500a2a8cbf43684c8b8d4"
+  },
+  {
+    "label": "3.0.0.4.384.45708",
+    "title": "",
+    "internal": "3_0_0_4_384_45708",
+    "size": "62.31 MB",
+    "date": "2019/04/03",
+    "is_beta": false,
+    "notes": "Security Fix\n - Fixed CVE-2018-20334\n - Fixed CVE-2018-20336\n - Fixed null pointer issue. Thanks for CodeBreaker of STARLabs\u2019 contribution.\n - Fixed AiCloud buffer overflow vulnerability. Thanks for Resecurity International's contribution.\n\nBug Fix\n - Fixed AiMesh LAN IP issue when router using IPv6 WAN.\n - Fixed AiMesh connection issues.\n - Fixed Network Map related issues.\n - Fixed Download Master icon disappear issue.\n - Fixed LAN PC cannot find router name in My Network Places when enabling Samba service.\n - Fixed LAN LED not blinking problem.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: f59c82a740cf6486d6060d52475b6a21"
+  },
+  {
+    "label": "3.0.0.4.384.45149",
+    "title": "",
+    "internal": "3_0_0_4_384_45149",
+    "size": "66.22 MB",
+    "date": "2018/12/05",
+    "is_beta": false,
+    "notes": "AiMesh\n- Improved AiMesh dedicated backhaul mechanism for tri-band to tri-band AiMesh modes.\n- Lyra, Lyra Mini, and Lyra Trio can be added as AiMesh node into GT-AC5300 network. \nPlease refer to https://www.asus.com/support/FAQ/1038071 for more detail.\n\nSecurity\n- Fixed CVE-2018-14710, CVE-2018-14711, CVE-2018-14712, CVE-2018-14713, CVE-2018-14714. Thanks for Rick Ramgattie's contribution.\n- Fixed AiCloud/ Samba account vulnerability. Thanks for Matthew Cundari's contribution.\n- Fixed DoS vulnerability. Thanks for Ruikai Liu's contribution.\n- Fixed CVE-2018-17020, CVE-2018-17021, CVE-2018-17022.\n- Fixed stored XSS vulnerability. Thanks for Duda Przemyslaw's contribution.\n- Updated OpenSSL library.\n\nNew Alexa skill and IFTTT actions \n- Add Alexa skill \u201c ask ASUS ROUTER to report security status\u201d\n- Add Alexa skill \u201c ask ASUS ROUTER how many devices are online\u201d\n- Add IFTTT actions : Wake on LAN\n- Add IFTTT actions : check new firmware available and upgrade\n[Note] You have to upgrade the firmware version up to 3.0.0.4.384_45149 if you want to use these new Alexa skills and IFTTT actions.\n\nBug fixes and improvement\n- Improved wireless stability.\n- Modified \u201cDual Wan\u201d user interface.\n- Modified \u201cPort Forwarding\u201d user interface.\n- Modified \u201cRestore\u201d user interface.\n- Fixed \u201cVPN Fusion\u201d bugs.\n- Fixed GUI bugs on user feedback page.\n- Fixed \u201cAdaptive QoS\u201d bugs.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: 0b201e7ff22b117deb66642a7bc4f0bf"
+  },
+  {
+    "label": "3.0.0.4.384.32799",
+    "title": "",
+    "internal": "3_0_0_4_384_32799",
+    "size": "65.37 MB",
+    "date": "2018/09/19",
+    "is_beta": false,
+    "notes": "Fixed WIFI stability issue.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: fdf31cb397cb52baf84c2b45579bf3a7"
+  },
+  {
+    "label": "3.0.0.4.384.32738",
+    "title": "",
+    "internal": "3_0_0_4_384_32738",
+    "size": "65.36 MB",
+    "date": "2018/08/21",
+    "is_beta": false,
+    "notes": "AiMesh new features\n - Supported creating mesh system with new router, BlueCave.\n - Added Roaming block list in Advanced Settings --> Wireless. \n You can add devices into block list and this device will not be roamed between AiMesh nodes.\n - Supported ethernet onboarding. User can use ethernet cable.\n You can use ethernet cable to connect AiMesh router LAN port and AiMesh node WAN port first and run the adding node process to build the mesh system.\n\nSecurity fixes.\n - Fixed Reflected XSS vulnerability.\n - Fixed CSRF vulnerability.\n - Fixed command injection vulnerability.\n - Fixed stack buffer overflow vulnerability.\nThanks for Rick Ramgattie contribution.\n\n Fixed Adaptive QoS upload bandwidth setting issue.\n Fixed 4-wire ethernet cable compatibility issues.\n Fixed USB hard drive over 2TB compatibility issues.\n Fixed Samba/FTP folder permission issues.\n Added USB3.0/2.0 mode switch setting in Administration --> System --> USB Settings.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: b5993113cb163272605bc48a097875f3"
+  },
+  {
+    "label": "3.0.0.4.384.21140",
+    "title": "",
+    "internal": "3_0_0_4_384_21140",
+    "size": "65.81 MB",
+    "date": "2018/07/10",
+    "is_beta": false,
+    "notes": "- [DDNS] Modified the procedure of DDNS service register under dual wan load balance mode\n- [WAN] Modified detect logic of internet connection\n- [AiMesh] Fixed AiMesh onboarding unsuccessfully once smart connect is enabled\n- [AiMesh] Modified AiMesh nodes notification procedure\n- [GUI] Fixed AiProtection GUI bugs.\n- [GUI] Updated OpenVPN server FAQ URL.\n\nPlease unzip the firmware file first then check the MD5 code.\nMD5: cb5adc0097f052453e2cf54c64501b0f"
+  }
+]

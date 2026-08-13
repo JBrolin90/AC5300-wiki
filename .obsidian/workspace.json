@@ -1,0 +1,251 @@
+{
+  "main": {
+    "id": "12c1615181aa32c2",
+    "type": "split",
+    "children": [
+      {
+        "id": "6af5ff38405680c9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e2976ebea37d5a68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "14ce0383defb5387",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/concepts/wireless-settings.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "wireless-settings"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "40ab7a63762d5ca8",
+    "type": "split",
+    "children": [
+      {
+        "id": "a61e74325ca5c0d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "84ffbf7da15f9f05",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "f23c0969dd09507f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "772fdf1c6533adab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 511.22552490234375
+  },
+  "right": {
+    "id": "094f63fb57c4b1ee",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a74f0b320f35ad3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "884849dd58226809",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "b88117087cdd668f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "465d3791d7a93e55",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "94cf8cf9ba449950",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "636ce2acec5d5225",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "14ce0383defb5387",
+  "lastOpenFiles": [
+    "wiki/concepts/game-ips.md",
+    "wiki/concepts/wireless-settings.md",
+    "manual-p055-193-wireless-bridge-mode.md",
+    "wiki/concepts/wifi-radar.md",
+    "wiki/source-summary/gt-ac5300-manual-figures.md",
+    "wiki/concepts/game-profile.md",
+    "wiki/concepts/administration.md",
+    "assets/figures/manual-p038-153-game-radar-world-map.png",
+    "assets/figures/manual-p036-149-game-profile-curated-list.png",
+    "assets/figures/manual-p023-128-game-ips-overview.png",
+    "wiki/concepts/utilities.md",
+    "assets/figures/manual-p066-220-lan-dhcp-server.png",
+    "assets/figures/manual-p055-193-wireless-bridge-mode.png",
+    "assets/figures/manual-p046-169-traffic-analyzer-static.png",
+    "assets/figures/manual-p043-166-vpn-server-pptp.png",
+    "assets/figures/manual-tmp-368.png",
+    "assets/figures/manual-tmp-367.png",
+    "assets/figures/manual-tmp-366.png",
+    "assets/figures/manual-tmp-368.ppm",
+    "assets/figures/manual-tmp-367.ppm",
+    "assets/figures/manual-tmp-366.ppm",
+    "assets/figures/manual-tmp-365.ppm",
+    "assets/figures/manual-tmp-364.ppm",
+    "assets/figures/manual-tmp-363.ppm",
+    "assets/figures/manual-tmp-362.ppm",
+    "assets/figures/manual-tmp-361.ppm",
+    "assets/figures/manual-tmp-360.ppm",
+    "assets/figures/manual-tmp-359.ppm",
+    "wiki/index.md",
+    "wiki/concepts/rog-gaming-center.md",
+    "wiki/concepts/port-forwarding-and-trigger.md",
+    "wiki/entities/rog-rapture-gt-ac5300.md",
+    "wiki/concepts/ipv6.md",
+    "raw/gt-ac5300-firmware-page-2026-08-13.md",
+    "wiki/concepts/usb-applications.md",
+    "wiki/concepts/troubleshooting.md",
+    "wiki/concepts/firewall.md",
+    "wiki/concepts/alexa-ifttt.md",
+    "wiki/log.md",
+    "wiki/source-summary/gt-ac5300-firmware-history.md",
+    "wiki/comparison/gt-ac5300-vs-competitors.md",
+    "wiki/concepts/aimesh.md",
+    "wiki/concepts/vpn-fusion.md",
+    "wiki/source-summary/gt-ac5300-pcmag-review.md",
+    "wiki/source-summary/gt-ac5300-pcmag-review-original.md"
+  ]
+}
