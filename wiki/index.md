@@ -1,6 +1,6 @@
 # Wiki Index
 
-**Last updated**: 2026-08-13 (sixth update: image-asset pilot — 7 figures extracted from manual to `assets/figures/`, naming convention documented in AGENT.md, figures catalog page created, 6 concept pages now have inline figures)
+**Last updated**: 2026-08-13 (eighth update: new `concepts/placement.md` extracted from manual §1.4 with antenna-orientation figure; troubleshooting §1.4 reference replaced with wikilink; firmware concept page (seventh update) consolidating firmware-as-mechanism across all pages; image-asset pilot — 7 figures extracted from manual to `assets/figures/`, naming convention documented in AGENT.md, figures catalog page created, 6 concept pages now have inline figures)
 
 ---
 
@@ -26,6 +26,7 @@ Raw sources:
 ### Setup & GUI
 - [[concepts/quick-internet-setup]] — QIS first-run wizard (modes incl. AiMesh)
 - [[concepts/rog-gaming-center]] — Web GUI / dashboard
+- [[concepts/placement]] — Physical placement + antenna orientation (manual §1.4)
 - [[concepts/aimesh]] — Mesh-controller operation mode (newer firmware)
 
 ### Gaming features (ROG-specific)
@@ -52,7 +53,8 @@ Raw sources:
 - [[concepts/firewall]] — URL / Keyword / Network Services filters + IPv6 firewall
 
 ### System, automation & support
-- [[concepts/administration]] — Operation mode, system, firmware, restore/save
+- [[concepts/administration]] — Operation mode, system, firmware upgrade, restore/save
+- [[concepts/firmware]] — Canonical firmware index: update procedure, release history, EoL, feature introductions, CVE summary
 - [[concepts/utilities]] — Device Discovery, Firmware Restoration, Printer Server, Download Master
 - [[concepts/troubleshooting]] — Basic steps and FAQs
 - [[concepts/alexa-ifttt]] — Alexa voice + IFTTT automation (newer firmware)

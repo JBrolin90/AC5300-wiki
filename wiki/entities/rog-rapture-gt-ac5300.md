@@ -8,6 +8,7 @@ sources:
   - "[[../source-summary/gt-ac5300-pcmag-review]]"
   - "[[../source-summary/gt-ac5300-firmware-history]]"
 created: 2025-07-16
+updated: 2026-08-13
 updated: 2025-07-16
 confidence: 0.95
 ---
@@ -72,6 +73,7 @@ GUI entry: `http://router.asus.com` (default IP `192.168.1.1`). First login is a
 - [[../comparison/gt-ac5300-vs-competitors]] — PCMag's 2018 competitor snapshot
 - [[../concepts/quick-internet-setup]] — first-time setup flow
 - [[../concepts/rog-gaming-center]] — firmware GUI overview
+- [[../concepts/firmware]] — firmware index (release history, EoL, feature introductions, CVEs)
 - [[../concepts/vpn-fusion]] — VPN + direct-internet split
 - [[../concepts/aimesh]] — mesh-controller operation mode
 - [[../concepts/alexa-ifttt]] — voice / IFTTT integration

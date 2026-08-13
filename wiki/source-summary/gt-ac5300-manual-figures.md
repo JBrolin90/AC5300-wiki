@@ -15,6 +15,8 @@ related:
 created: 2026-08-13
 updated: 2026-08-13
 confidence: 0.9
+related:
+  - "[[../concepts/placement]]"
 ---
 # GT-AC5300 manual — figure catalog (pilot)
 
@@ -22,7 +24,17 @@ A small set of figures extracted from the May-2017 user manual (document E12817)
 
 **Extraction**: `pdfimages -j E12817_GT_AC5300_Manual.pdf` → 369 raw images → 354 PNG conversions (PPM → PNG via PIL) → 11 small JPG icons deleted → 7 substantive figures kept and renamed per the convention `{source-prefix}-p{page}-{index}-{caption}.png`.
 
+> **Note**: the antenna-orientation figure from §1.4 (manual p. 10) is rendered as vector graphics in the PDF (no embedded raster), so it was extracted via `pdftoppm` + `PIL.crop` rather than `pdfimages`. It is the only figure here obtained that way.
+
 ## Figures
+
+### Antenna orientation — §1.4
+
+Source: manual page 10. Vector graphics in the PDF; extracted by rasterizing page 10 with `pdftoppm -r 200` and cropping to the antenna region. Shows the router from the front with the **two outer antennas at 45°** (labeled) and the **two inner antennas vertical**, plus the wireless-signal waves emanating from both sides.
+
+![Antenna orientation — manual p. 10 (outer two at 45°, inner two vertical)](../../assets/figures/manual-p010-antenna-orientation.png)
+
+Maps to: [[../concepts/placement]]
 
 ### Game IPS — overview
 

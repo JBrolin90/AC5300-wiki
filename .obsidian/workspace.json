@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/concepts/wireless-settings.md",
+                "file": "AGENT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "wireless-settings"
+              "title": "AGENT"
             }
           }
         ],
@@ -202,8 +202,13 @@
   },
   "active": "14ce0383defb5387",
   "lastOpenFiles": [
-    "wiki/concepts/game-ips.md",
+    "raw/E12817_GT_AC5300_Manual.pdf",
+    "wiki/concepts/firmware.md",
+    "wiki/concepts/placement.md",
+    "assets/figures/manual-p010-antenna-orientation.png",
+    "raw/gt-ac5300-firmware-page-2026-08-13.md",
     "wiki/concepts/wireless-settings.md",
+    "wiki/concepts/game-ips.md",
     "manual-p055-193-wireless-bridge-mode.md",
     "wiki/concepts/wifi-radar.md",
     "wiki/source-summary/gt-ac5300-manual-figures.md",
@@ -219,7 +224,6 @@
     "assets/figures/manual-p043-166-vpn-server-pptp.png",
     "assets/figures/manual-tmp-368.png",
     "assets/figures/manual-tmp-367.png",
-    "assets/figures/manual-tmp-366.png",
     "assets/figures/manual-tmp-368.ppm",
     "assets/figures/manual-tmp-367.ppm",
     "assets/figures/manual-tmp-366.ppm",
@@ -229,13 +233,11 @@
     "assets/figures/manual-tmp-362.ppm",
     "assets/figures/manual-tmp-361.ppm",
     "assets/figures/manual-tmp-360.ppm",
-    "assets/figures/manual-tmp-359.ppm",
     "wiki/index.md",
     "wiki/concepts/rog-gaming-center.md",
     "wiki/concepts/port-forwarding-and-trigger.md",
     "wiki/entities/rog-rapture-gt-ac5300.md",
     "wiki/concepts/ipv6.md",
-    "raw/gt-ac5300-firmware-page-2026-08-13.md",
     "wiki/concepts/usb-applications.md",
     "wiki/concepts/troubleshooting.md",
     "wiki/concepts/firewall.md",
@@ -244,8 +246,6 @@
     "wiki/source-summary/gt-ac5300-firmware-history.md",
     "wiki/comparison/gt-ac5300-vs-competitors.md",
     "wiki/concepts/aimesh.md",
-    "wiki/concepts/vpn-fusion.md",
-    "wiki/source-summary/gt-ac5300-pcmag-review.md",
-    "wiki/source-summary/gt-ac5300-pcmag-review-original.md"
+    "wiki/concepts/vpn-fusion.md"
   ]
 }

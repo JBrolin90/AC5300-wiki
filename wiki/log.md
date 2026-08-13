@@ -375,3 +375,105 @@ Each ref carries an alt-text description of what the figure shows + the manual p
 **Open follow-up**: lint script (`outputs/lint.py`) still has image-aware logic for resolving `![[name]]` wikilinks via `assets/`. Left in place in case the user later wants to mix the two syntaxes; harmless.
 
 **Future work**: if Obsidian's indexer behaviour is investigated further, the user can decide whether to keep using standard markdown exclusively or whether some `![[name]]` references for diagrams are worth re-introducing (e.g. for Excalidraw files where Obsidian's auto-rename is useful).
+
+---
+
+## 2026-08-13 — New concept: firmware (consolidating a cross-cutting topic)
+
+**User request**: investigate why the wiki has no `Firmware` topic despite the manual having a `Firmware Upgrade` section and a 416-line ASUS firmware-history raw source.
+
+**Investigation**: searched wiki, log, sources, and concept pages. Findings:
+
+- **Firmware data was already fully extracted**, but deliberately **decomposed** across multiple pages rather than concentrated in one concept:
+  - `source-summary/gt-ac5300-firmware-history.md` (release history + EoL)
+  - `concepts/administration.md#Firmware Upgrade` (update procedure)
+  - `concepts/utilities.md#Firmware Restoration` (rescue mode)
+  - `entities/rog-rapture-gt-ac5300.md` (stock firmware identifier + EoL status + GPL licensing)
+  - `comparison/asuswrt-merlin-386-eol.md` (Merlin timeline)
+  - Per-feature introduction firmware versions embedded in each feature's page (aimesh, vpn-fusion, alexa-ifttt, game-boost, usb-applications)
+- **No wikilink anywhere expected `[[concepts/firmware]]` to exist** — `outputs/lint.py` reported `Missing concepts: 0`.
+- **The wiki's working model** (visible in the 2026-08-13 re-fetch log) is: feature-introduction facts belong on the *feature* page, not on a generic "firmware" page. So new firmware-versioned content (Mobile Game Mode, USB 3.0/2.0 mode switch, AiMesh v1.5 additions) was added to the relevant feature page rather than to a central firmware page.
+- **The sources don't describe "firmware" as a cohesive concept**: the manual's §4.10.3 is only 3-4 paragraphs of update procedure; the ASUS support page is a chronological index; the PCMag review mentions firmware once in passing. The wiki had already classified each aspect correctly — but no single page tied them together.
+
+**Decision** (per user): treat firmware as a *cross-cutting concept* (similar to how `administration`, `utilities`, `troubleshooting` are category pages) and add a coordinating concept page that pulls everything together without duplicating detail.
+
+**Created page**: `wiki/concepts/firmware.md`
+- Frontmatter: `type: concept`, `confidence: 0.9`, `sources:` to manual summary + firmware-history source-summary + PCMag review, `related:` to administration, utilities, aimesh, vpn-fusion, alexa-ifttt, game-boost, usb-applications, entity, Merlin EoL comparison.
+- Body: 6 sections — opening (what firmware *is* for this router), **Where to find firmware-related content** (table mapping aspect → page), **Feature introductions** (table of all firmware-gated features with version + date + feature-page wikilink), **Security CVEs** (selected high-impact, full list on firmware-history page), **Update procedure** (summary linking to admin/utilities for detail), **Naming conventions** (version-string decoding), **Open verification**.
+- No content duplication — the page points to the existing detail pages.
+
+**Updated pages**:
+- `wiki/index.md`: added `[[concepts/firmware]]` row under "System, automation & support"; bumped `**Last updated**` line to note the seventh update.
+- `wiki/entities/rog-rapture-gt-ac5300.md`: added `[[../concepts/firmware]]` to "See also" (between `rog-gaming-center` and `vpn-fusion`); bumped `updated:` to 2026-08-13.
+
+**AGENT.md**: a separate review of the Ingest workflow identified gaps that allowed this kind of cross-cutting topic to fall through the cracks. Adjustments proposed below — to be applied next.
+
+**Lint** (run after this entry): should still pass with no orphans, no catalog gaps, no missing concepts. Run `python3 outputs/lint.py` to confirm.
+
+---
+
+## 2026-08-13 — New concept: placement (manual §1.4)
+
+**User request**: investigate why a "placement" / "positioning" topic had not been extracted despite manual §1.4 being a clear, distinct topic.
+
+**Investigation**: searched wiki, log, sources, and concept pages. Findings:
+
+- **Manual §1.4 "Positioning your router"** (pages 9–10) contains five concrete bullets: location, interference-source list, firmware nudge, and an antenna-orientation figure showing 4 antennas (2 outer at 45°, 2 inner vertical).
+- **§1.4 was never mentioned in the wiki** — only one manual-§-number reference (`see §1.4`) in `concepts/troubleshooting.md`, which used the section number not a wikilink.
+- **The antenna-orientation figure was not extracted** during the image-asset pilot (it is rendered as vector graphics in the PDF, not as an embedded raster image, so `pdfimages` skipped it; the pilot used `pdfimages -j` and never fell back to `pdftoppm` for vector figures).
+- **No log entry mentioned §1.4** — the initial manual ingest logged §1.3, §2.2, §3.x, §4.x, §5.x, §6.x but not §1.4.
+
+**Why §1.4 fell through the cracks** (compounding reasons, none stated explicitly):
+1. §1.4 is small (4 bullets + 1 figure) — likely de-prioritized by an LLM that biased toward ROG-specific content.
+2. §1.4 lives in Chapter 1 ("Getting to know your wireless router") — the initial ingest focused on Chapters 3 (Gaming Center), 4 (Advanced Settings), 5 (Utilities). Chapter 1 only got a single curated-note entry (the §1.3 hardware highlights).
+3. No broken-wikilink pressure: the troubleshooting reference used the section number, so no `Missing concepts: 1` was ever triggered.
+4. The antenna-orientation figure (the most information-dense part of §1.4) was not extracted because it was vector graphics — the image-asset pilot only used `pdfimages`, which doesn't see vector content.
+
+**Is this a legitimate non-extraction?** Partially. Keeping §1.4 inside the manual source-summary was defensible (it's a one-time setup decision, not a feature). But the troubleshooting page's `see §1.4` reference points readers out of the wiki, which is a gap even under the most conservative design. User chose to extract it as a concept.
+
+**Changes applied**:
+
+- **Extracted figure**: `assets/figures/manual-p010-antenna-orientation.png` (1023×548, 48 KB). The figure is vector graphics in the PDF (no embedded raster), so extracted via `pdftoppm -f 10 -l 10 -r 200 -png` + `PIL.crop` rather than `pdfimages`. Naming convention `{source-prefix}-p{page}-{caption}.png` slightly bent here (no figure-index since the source has no embedded raster; documented as an exception in the figures catalog page).
+- **Created page**: `wiki/concepts/placement.md` — procedure-style concept page modelled on `concepts/administration.md` and `concepts/utilities.md`. Sections: opening (one-time decision framing), **Location** (central, metal/sun), **Avoid these interference sources** (the 11-item list from §1.4), **Antenna orientation** (45° outer / vertical inner + figure), **Firmware** (cross-link to firmware concept), **When placement isn't enough** (cross-link to troubleshooting).
+- **`wiki/concepts/troubleshooting.md`**: replaced `adjust antennas (see §1.4)` with `adjust antennas per [[placement#Antenna orientation]]`. The manual-§-number reference is now a wikilink.
+- **`wiki/source-summary/gt-ac5300-manual-figures.md`**: added a new first entry documenting the §1.4 antenna-orientation figure, including the `pdftoppm` + `PIL.crop` extraction method (the page now notes that this is the only figure extracted that way). Bumped `updated:` and added `related:` to placement.
+- **`wiki/source-summary/gt-ac5300-manual.md`**: added a new "Positioning your router (§1.4)" Curated Notes section summarizing the bullets and pointing to the placement concept page. Bumped `updated:` and added `related:` to placement.
+- **`wiki/index.md`**: added `[[concepts/placement]]` row under "Setup & GUI"; bumped `**Last updated**` to eighth update.
+
+**AGENT.md**: no further changes needed — the cross-cutting concept pattern documented in the previous entry already covered this case. Placement is a **procedure concept** (a workflow/setup step), not a cross-cutting one, so the existing taxonomy was sufficient. The image-extraction step *could* benefit from a note about `pdftoppm` for vector figures, but that's a future Lint improvement rather than a workflow gap.
+
+**Lint** (after this entry): 35 pages scanned, 0 orphans, 0 catalog gaps, 0 missing concepts, 8 contradictions (unchanged), 12 stale markers (unchanged).
+
+---
+
+## 2026-08-13 — AGENT.md: Promote workflow + synthesis-to-concept proposal rule
+
+**User request**: when Pi (or any agent) successfully answers a question by synthesizing across multiple wiki pages — i.e. the topic is *latent* in the wiki but not yet its own concept — Pi should propose promoting that topic to a concept page. Goal: make the wiki self-improving, capturing cross-page knowledge as it gets exercised.
+
+**Investigation**: reviewed the Query workflow in `AGENT.md`. The existing step 4 ("If the answer is novel and valuable, offer to save it as a new wiki page") was a weaker version of this — it didn't distinguish cross-page synthesis from one-off novel answers, didn't propose a specific page type, and didn't have a corresponding procedure for after approval.
+
+**Changes to `AGENT.md`**:
+
+1. **Query workflow step 4** rewritten as **"Synthesis-to-concept proposal"**:
+   - Trigger: answering required reading and combining **2+ wiki pages** because no single page contained the answer.
+   - Output: a structured proposal containing page title (kebab-case), page type (per the Choosing-a-page-type decision tree), one-paragraph rationale, list of existing pages that fed into the synthesis, confidence level (high/medium/low), and a *create vs augment* decision.
+   - Behavior: **propose, do not auto-create**. Wait for the user to approve.
+
+2. **Query workflow step 5**: replaced the old "save as new wiki page" rule with a narrower fallback for novel-but-non-synthesis answers — save as a chat-history note rather than auto-creating a wiki page, only if it would be useful to keep.
+
+3. **New `### Promote` workflow** added (between Lint and the end of the Workflows section):
+   - Trigger: user approves a synthesis-to-concept proposal, or asks directly to extract a topic.
+   - 6 steps: classify page type → draft with standard wiki schema → augment-don't-duplicate → update index.md → log.md entry with provenance (which pages fed in, the rationale, the confidence) → lint.
+
+**Why a separate workflow and not an Ingest variant?** The Promote trigger is fundamentally different from Ingest:
+- **Ingest** = new source arrives → pages are extracted from it
+- **Promote** = cross-page synthesis happens → a new page captures the synthesis as a first-class artifact
+
+The destination is the same (well-structured wiki page with frontmatter/sources/related/confidence) but the provenance is different, and `wiki/log.md` records which path each page came from.
+
+**Effect on future sessions**:
+- When Pi answers a router question and reads ≥2 pages to do it, Pi will surface a "promote to concept?" proposal with full structure, instead of just answering and moving on.
+- When the user approves, Pi runs the Promote workflow and the new page joins the wiki as a synthesis artifact, with provenance pointing back at the pages that fed it.
+- This should over time close the "discoverability gaps" identified in the previous log entry's status assessment — topics like "safe use of EoL router", "stock vs Merlin in practice", "common task recipes" will emerge as users (or Pi) actually ask the questions.
+
+**No wiki content changed.** Lint status unchanged. Only `AGENT.md` and `wiki/log.md` (this entry) modified.

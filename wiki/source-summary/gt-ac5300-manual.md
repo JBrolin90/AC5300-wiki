@@ -6,7 +6,9 @@ sources:
   - "[[gt-ac5300-manual-text.txt]]"
 related:
   - "[[../entities/rog-rapture-gt-ac5300]]"
+  - "[[../concepts/placement]]"
 created: 2025-07-16
+updated: 2026-08-13
 updated: 2025-07-16
 confidence: 0.95
 ---
@@ -41,6 +43,12 @@ confidence: 0.95
 - USB 3.0 + USB 2.0 ports for storage / printer / 3G-4G modem.
 - Triple-band: 2.4 GHz + 5 GHz-1 + 5 GHz-2, concurrent.
 - Power: 19 V / 3.42 A.
+
+### Positioning your router (§1.4)
+- Place centrally for max coverage; keep away from metal obstructions and direct sunlight.
+- Avoid interference sources: 802.11g / 20MHz-only Wi-Fi devices, 2.4 GHz peripherals, Bluetooth, cordless phones, transformers, heavy-duty motors, fluorescent lights, microwaves, refrigerators, industrial equipment.
+- Antenna orientation: outer two at **45°**, inner two vertical. See [[../concepts/placement]] for the full guidance and antenna-orientation figure.
+- Manual also reminds: "always update to the latest firmware" — see [[../concepts/firmware]].
 
 ### Quick Internet Setup (QIS) (§2.2)
 - Web GUI auto-launches at `http://router.asus.com`; first login prompts for password.

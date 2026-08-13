@@ -53,7 +53,7 @@ SSID, encryption method, password — all must match the router.
 
 ### Client can't connect wirelessly
 - For 5 GHz issues: confirm the wireless device supports 5 GHz (or is dual-band)
-- **Out of range**: move router closer / adjust antennas (see §1.4)
+- **Out of range**: move router closer / adjust antennas per [[placement#Antenna orientation]]
 - **DHCP disabled**: enable it under `Advanced Settings → LAN → DHCP Server`
 - **SSID hidden**: unhide under `Wireless → General`
 - **Channel mismatch** (regulatory): adjust channel / bandwidth / wireless mode
